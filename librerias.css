@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Estilos básicos para texto dentro de un elemento de etiqueta */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 75%;
+}
+
+.contanier{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: lightgrey;
+
+}
+
+
+.Lalibreria {
+    color: darkred;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul{
+    display: flex;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 0 20px;
+    color: green;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: purple;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 10px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.header-txt {
+    flex-basis: 50%;
+    padding-right: 80px;
+}
+
+.header-txt h1 {
+    font-size: 250%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    color: darkblue;
+    margin-bottom: 15px;
+}
+/* Cambia "elemento" por el selector CSS que desees */
+elemento {
+    font-size: 16px;
+    font-weight: 300px;
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 1.5;
+    color: yellow;
+    background-color: yellow;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos para textos en dos columnas */
+.texto-dos-columnas {
+    column-count: 4;
+}
+
+/* Estilos para cuadros de texto con sombras */
+.cuadro-con-sombra {
+    background-color: #A3BBAD;
+    flex-basis: calc(33.3% - 40px);
+    padding: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 2, 4.8);
+    border-radius: 40px;
+}
+
+.cuadro-con-sombra img {
+    max-width: 70%;
+    margin-bottom: 20px;
+    padding: 50px 50px;
+    float: right;
+}
+
+.books {
+    padding: 80px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #1B1B1D;
+    font-size: 40px;
+}
+
+.books-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: silver;
+}
+
+.books-1 {
+    flex-basis: calc(33.3% - 40px);
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #EFC7E5;
+}
+
+.books-1 p {
+    font-size: 12px;
+    color: #1B1B1D;
+    margin-bottom: 15px;
+}
+.books-1 img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.books-1 h3 {
+    color: #1B1B1D;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: 1px solid#1B1B1D2B;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-content ul {
+    display: flex;
+}
+
+.footer-content ul li a {
+    display: block;
+    padding: 10px;
+    color: #916953;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-content ul li a:hover {
+    color:E87582 ;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: : absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color: #916953;
+        display: none;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul li a: hover {
+        color: #FFFFFF;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+    .header-content {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        padding: 0 0 40px 0;
+    }
+
+    .books {
+        padding: 30px;
+    }
+
+    .books-content {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+
+}
